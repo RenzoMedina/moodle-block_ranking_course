@@ -25,6 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['nousers'] = 'No users found in this course.';
-$string['pluginname'] = 'Ranking by course';
-$string['rank'] = 'Rank';
+$string['nousers'] = 'No se encontraron usuarios en este curso.';
+$string['pluginname'] = 'Ranking de estudiantes';
+$string['rank'] = 'Posición';

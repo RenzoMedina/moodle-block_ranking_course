@@ -26,6 +26,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_ranking_course';
 $plugin->release = '0.1.0';
-$plugin->version = 2026031300;
+$plugin->version = 2026031302;
 $plugin->requires = 2022112800;
 $plugin->maturity = MATURITY_ALPHA;

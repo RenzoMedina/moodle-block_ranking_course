@@ -28,3 +28,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['nousers'] = 'No se encontraron usuarios en este curso.';
 $string['pluginname'] = 'Ranking de estudiantes';
 $string['rank'] = 'Posición';
+$string['ranking_course:addinstance'] = 'Agregar un nuevo bloque de ranking_course';
+$string['ranking_course:myaddinstance'] = 'Agregar un nuevo bloque de ranking_course a la página Mi Moodle';

@@ -101,7 +101,7 @@ class block_ranking_course extends block_base {
      * Performs a self-test to check if the block is working correctly.
      * @return bool
      */
-    function _self_test() {
+    public function self_test() {
         return true;
     }
 }

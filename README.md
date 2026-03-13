@@ -1,8 +1,15 @@
 # Ranking by course #
 
-TO-DO Describe the plugin shortly here.
+This section encourages healthy competition among students by showing who has the highest GPA in the current course. At the same time, it respects the privacy of those who do not wish to be publicly identified.
 
-TO-DO Provide more detailed description here.
+## Features ##
+
+- Display the top 5 students with the highest GPA in the course.
+- Privacy settings:
+    -Visible names: displays full name and GPA.
+    - Anonymous: Shows only rankings (1st, 2nd, 3rd…), with each student seeing their own ranking highlighted.
+    - Teachers always see full names, regardless of the mode.
+- Excludes users who do not have the student role or who have no recorded grades.
 
 ## Installing via uploaded ZIP file ##
 

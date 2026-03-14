@@ -21,7 +21,6 @@
  * @copyright   2026 Renzo Medina <medinast30@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 class block_ranking_course extends block_base {
 
     /**
@@ -38,7 +37,7 @@ class block_ranking_course extends block_base {
      * @return stdClass The block contents.
      */
     public function get_content() {
-        global $OUTPUT, $USER, $CFG, $COURSE;
+        global $OUTPUT, $CFG;
         require_once($CFG->dirroot . '/lib/gradelib.php');
         if ($this->content !== null) {
             return $this->content;

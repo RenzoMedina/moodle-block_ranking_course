@@ -21,6 +21,7 @@
  * @copyright   2026 Renzo Medina <medinast30@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 class block_ranking_course extends block_base {
 
     /**
@@ -37,7 +38,8 @@ class block_ranking_course extends block_base {
      * @return stdClass The block contents.
      */
     public function get_content() {
-
+        global $OUTPUT,$USER, $CFG, $COURSE;
+        require_once($CFG->dirroot . '/lib/gradelib.php');
         if ($this->content !== null) {
             return $this->content;
         }
@@ -55,7 +57,6 @@ class block_ranking_course extends block_base {
         if (!empty($this->config->text)) {
             $this->content->text = $this->config->text;
         } else {
-            global $OUTPUT;
             $this->content->text = $OUTPUT->render_from_template('block_ranking_course/main', []);
         }
 

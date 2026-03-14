@@ -34,11 +34,10 @@ class block_ranking_course_edit_form extends block_edit_form {
         $mform->addElement('header', 'configheader', get_string('blocksettings', 'block'));
 
         // Please keep in mind that all elements defined here must start with 'config_'.
-        $mform->addElement('select',  'config_activeusers',  get_string('activeusers', 'block_ranking_course'), [
+        $mform->addElement('select', 'config_activeusers', get_string('activeusers', 'block_ranking_course'), [
             0 => get_string('nameusers', 'block_ranking_course'),
             1 => get_string('hiddenusers', 'block_ranking_course'),
         ]);
         $mform->addHelpButton('config_activeusers', 'activeusers', 'block_ranking_course');
-
     }
 }

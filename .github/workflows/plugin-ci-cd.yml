@@ -143,7 +143,7 @@ jobs:
         run: |
           echo "Creando ZIP para: ${{ env.PLUGIN_NAME }}"
           cd /tmp/build
-          zip -r ${{ env.PLUGIN_NAME }}.zip academic_summary
+          zip -r ${{ env.PLUGIN_NAME }}.zip ranking_course
           mv ${{ env.PLUGIN_NAME }}.zip ${GITHUB_WORKSPACE}/${{ env.PLUGIN_NAME }}-${{ env.DEPLOY_TIME }}.zip
           cd ${GITHUB_WORKSPACE}
           echo "ZIP creado correctamente"

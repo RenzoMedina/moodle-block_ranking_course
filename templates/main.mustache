@@ -22,8 +22,8 @@
 	{
 		"users": [
 			{
-				"fullname": "John Doe",
-				"rank": 1
+				"rank": 1,
+				"fullname": "John Doe"
 			}
 		]
 	}
@@ -31,21 +31,26 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>{{#str}}fullname, core{{/str}}</th>
 			<th>{{#str}}rank, block_ranking_course{{/str}}</th>
+			<th>{{#str}}fullname, core{{/str}}</th>
 		</tr>
 	</thead>
 	<tbody>
 		{{#users}}
-		<tr>
-			<td>{{fullname}}</td>
-			<td>{{rank}}</td>
-		</tr>
-		{{/users}}
-		{{^users}}
-		<tr>
-			<td colspan="2" class="text-center">{{#str}}nousers, block_ranking_course{{/str}}</td>
-		</tr>
-		{{/users}}
+    <tr class="{{#iscurrentuser}}table-primary font-weight-bold{{/iscurrentuser}}">
+        <td class="text-center">{{rank}}</td>
+        <td>
+            {{fullname}}
+            {{#iscurrentuser}}
+                <span class="badge badge-primary">{{#str}}you, block_ranking_course{{/str}}</span>
+            {{/iscurrentuser}}
+        </td>
+    </tr>
+    {{/users}}
+    {{^users}}
+    <tr>
+        <td colspan="2" class="text-center">{{#str}}nousers, block_ranking_course{{/str}}</td>
+    </tr>
+    {{/users}}
 	</tbody>
 </table>

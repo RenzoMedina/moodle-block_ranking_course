@@ -27,7 +27,8 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activeusers'] = 'Privacy Mode';
 $string['activeusers_help'] = 'When enabled, you will be able to see the names of users in the rankings; otherwise, information will only be displayed if the user is in the rankings. This helps you focus on students who are currently engaged.';
-$string['hiddenusers'] = 'Anonymous';
+$string['hiddenuser'] = 'Anonymou';
+$string['hiddenusers'] = 'Anonymous names';
 $string['nameusers'] = 'Visible names';
 $string['nousers'] = 'No users found in this course.';
 $string['pluginname'] = 'Ranking by course';
